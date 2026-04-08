@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>UMD Sales Club | The Corporate Catalyst</title>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@700;800;900&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-container": "#d1939f",
+                    "on-secondary": "#ffffff",
+                    "surface-container-high": "#e8e8e8",
+                    "surface-dim": "#dadada",
+                    "on-primary-container": "#ff7b7f",
+                    "inverse-on-surface": "#f0f1f1",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-primary": "#ffb3b2",
+                    "on-surface-variant": "#584141",
+                    "surface-tint": "#ae2e39",
+                    "secondary-fixed-dim": "#f2c025",
+                    "on-background": "#1a1c1c",
+                    "tertiary-fixed": "#ffd9df",
+                    "secondary-fixed": "#ffdf92",
+                    "on-primary-fixed-variant": "#8d1324",
+                    "surface-container-highest": "#e2e2e2",
+                    "primary": "#51000d",
+                    "on-error-container": "#93000a",
+                    "inverse-surface": "#2f3131",
+                    "outline-variant": "#e0bfbe",
+                    "primary-fixed": "#ffdad9",
+                    "on-secondary-container": "#705600",
+                    "on-tertiary-fixed-variant": "#683843",
+                    "surface": "#f9f9f9",
+                    "tertiary": "#401721",
+                    "tertiary-container": "#592c37",
+                    "on-surface": "#1a1c1c",
+                    "on-secondary-fixed-variant": "#594400",
+                    "on-secondary-fixed": "#241a00",
+                    "on-tertiary": "#ffffff",
+                    "secondary": "#755b00",
+                    "error-container": "#ffdad6",
+                    "primary-container": "#7a0019",
+                    "primary-fixed-dim": "#ffb3b2",
+                    "on-primary-fixed": "#410009",
+                    "secondary-container": "#fecb32",
+                    "outline": "#8c7070",
+                    "tertiary-fixed-dim": "#f8b5c1",
+                    "surface-container": "#eeeeee",
+                    "error": "#ba1a1a",
+                    "on-primary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "on-tertiary-fixed": "#350e19",
+                    "background": "#f9f9f9",
+                    "surface-variant": "#e2e2e2",
+                    "surface-container-low": "#f3f3f3",
+                    "surface-bright": "#f9f9f9"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Public Sans"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .noise-texture {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+            opacity: 0.03;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-slate-950/80 backdrop-blur-xl">
+<div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-black text-[#7A0019] tracking-tighter uppercase font-headline">
+                UMD Sales Club
+            </div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-['Public_Sans'] tracking-tight font-bold uppercase text-sm text-[#7A0019] border-b-2 border-[#7A0019] pb-1" href="#">About Us</a>
+<a class="font-['Public_Sans'] tracking-tight font-bold uppercase text-sm text-slate-600 dark:text-slate-400 font-medium hover:text-[#51000d] transition-colors duration-300" href="#">Events</a>
+<a class="font-['Public_Sans'] tracking-tight font-bold uppercase text-sm text-slate-600 dark:text-slate-400 font-medium hover:text-[#51000d] transition-colors duration-300" href="#">Mentorship</a>
+<a class="font-['Public_Sans'] tracking-tight font-bold uppercase text-sm text-slate-600 dark:text-slate-400 font-medium hover:text-[#51000d] transition-colors duration-300" href="#">Alumni</a>
+<a class="font-['Public_Sans'] tracking-tight font-bold uppercase text-sm text-slate-600 dark:text-slate-400 font-medium hover:text-[#51000d] transition-colors duration-300" href="#">Partners</a>
+<a class="font-['Public_Sans'] tracking-tight font-bold uppercase text-sm text-slate-600 dark:text-slate-400 font-medium hover:text-[#51000d] transition-colors duration-300" href="#">Gallery</a>
+</div>
+<a class="bg-gradient-to-r from-primary-container to-primary text-on-primary px-8 py-2.5 rounded-md font-bold text-sm tracking-wide hover:shadow-xl transition-all scale-95 active:duration-75 active:scale-90" href="https://duluthumn.campusgroups.com/sales/home/">
+                Join Now
+            </a>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center overflow-hidden bg-primary overflow-hidden">
+<div class="absolute inset-0 noise-texture pointer-events-none"></div>
+<div class="absolute inset-0 bg-gradient-to-br from-primary-container via-primary to-black opacity-90"></div>
+<div class="absolute right-0 top-0 w-1/2 h-full hidden lg:block opacity-40">
+<img alt="Professional business environment" class="w-full h-full object-cover grayscale brightness-50" data-alt="high-angle shot of a modern corporate meeting room with glass walls and professional atmosphere in deep maroon and charcoal tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwWwxTfHh8I2sx2BP-q0pkuGsU5BYy4j-OKlfDP27EXjAlgr4lkd84COxtU5FMvejV85d4o3z59TzN7jBwjKyheboFUHj8yiwLceUTQUq9YUkWVJ3xfj_2iucw6YpjUhtYfv6-PmciAIKS6BDoXiKmfZkPSZzZ3PCqTYftoi-Ae2CTToSkbI_jITszHwdsOp5pR1PUT0L7oc2lcSbCnwL_BoQORPws0XcB_gI0S1jczZ9rbOKisoBek7YHaZCII5X2LPx02DqVWg"/>
+</div>
+<div class="relative z-10 max-w-screen-2xl mx-auto px-8 w-full">
+<div class="max-w-4xl">
+<span class="inline-block px-4 py-1 bg-secondary-container text-on-secondary-container font-bold text-xs uppercase tracking-widest mb-6 rounded-sm">
+                        The Corporate Catalyst
+                    </span>
+<h1 class="font-headline text-6xl md:text-8xl lg:text-9xl font-black text-white leading-[0.9] tracking-tighter mb-8">
+                        Welcome to <br/>
+<span class="text-secondary-container">UMD Sales Club</span>
+</h1>
+<p class="font-body text-xl md:text-2xl text-surface-variant max-w-2xl mb-12 leading-relaxed">
+                        Bridging the gap between academic theory and executive performance. We don't just teach sales; we cultivate the next generation of business leaders.
+                    </p>
+<div class="flex flex-wrap gap-6">
+<a class="bg-secondary-container text-on-secondary-container px-10 py-5 rounded-md font-black text-lg hover:bg-white hover:text-primary transition-all duration-300" href="https://duluthumn.campusgroups.com/sales/home/">
+                            Get Started
+                        </a>
+<a class="border-b-2 border-white text-white px-2 py-5 font-bold text-lg hover:border-secondary-container hover:text-secondary-container transition-all" href="#about">
+                            Learn Our Legacy
+                        </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Sales Summit CTA (Glassmorphism / Editorial) -->
+<section class="relative -mt-24 z-20 px-8">
+<div class="max-w-screen-2xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 bg-white rounded-xl shadow-2xl overflow-hidden border border-outline-variant/10">
+<div class="lg:col-span-7 p-12 lg:p-20 flex flex-col justify-center bg-surface">
+<div class="flex items-center gap-2 text-primary font-bold tracking-widest uppercase text-xs mb-4">
+<span class="w-8 h-px bg-primary"></span>
+                            Featured Event
+                        </div>
+<h2 class="font-headline text-5xl font-black text-on-surface mb-6 leading-tight">
+                            LSBE Sales Summit 2024
+                        </h2>
+<p class="text-on-surface-variant text-lg mb-10 leading-relaxed max-w-xl">
+                            The premier professional development gathering in the Midwest. Connect with global firms, attend masterclasses from industry titans, and secure your future.
+                        </p>
+<div class="flex items-center gap-8">
+<a class="bg-primary text-white px-8 py-4 rounded-md font-bold hover:bg-primary-container transition-colors inline-flex items-center gap-2" href="https://lsbesalessummit.com/" target="_blank">
+                                Register Today
+                                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+<div class="flex flex-col">
+<span class="text-xs font-bold text-on-surface-variant uppercase">Location</span>
+<span class="text-sm font-semibold">Duluth Entertainment Convention Center</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 relative min-h-[400px]">
+<img alt="Professional Networking" class="absolute inset-0 w-full h-full object-cover" data-alt="sharp close-up of professionals in suits shaking hands at a high-end corporate event with warm bokeh lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHQS-5LJGAcPxEHVF42ccCiRQne-7I_EtCG81K2JoVXhPTb5iII38vc4bLIsgOssnTcbfhSOz4RMrXWxPm9d6NlLCPMNqdrDR0fe3Y8FDGNJ0bKmgcUdHazDQWr4t5CHBuXHX8_2WgbZIReQIyGnV-hlpr5MkOfEfnoWgTWJqYXLyOTv7KqxrHd7jIi7qwRthY1wng2Hnru9j1CfCqZT1UGGkNISzUgl24Q3qlous1SMhpsWVY4LUEVoBer43aGcqkbhJ95MS7SQ"/>
+<div class="absolute inset-0 bg-primary/20 backdrop-overlay"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Us Summary (Asymmetric Layout) -->
+<section class="py-32 bg-surface" id="about">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<div class="order-2 lg:order-1 relative">
+<div class="absolute -top-12 -left-12 w-64 h-64 bg-secondary-container/20 rounded-full blur-3xl"></div>
+<div class="grid grid-cols-2 gap-4 relative">
+<img alt="Team collaboration" class="rounded-xl w-full h-[400px] object-cover mt-12" data-alt="group of professional students collaborating in a modern glass-walled workspace with natural morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLyJtLbMYgXrILgWrfZkYwbyoo8z0er3bOpCJmT4fxhoBoMMvody6_niWxpVGDjNDnZBBG7R9SnLJn6nsnk7Xg6Vw3QrE8EzRwGh6aBsGjsL-4Ft391xD94_zBTaNCihY9L-F7pzlTiRizdNmWMjjr24VgwoqtYQtWjAzF10WI9PyNNTb3lRbv02pXgXsAS4pKpS7Ba0TpKpOu3EiVXWgJcH5AUE9pyhjJoi1nS2y-cCPjJ97jbsk5PTsxfT_dktBqzjlzwDWu0g"/>
+<img alt="Professional Speaker" class="rounded-xl w-full h-[400px] object-cover" data-alt="confident professional woman speaking at a business seminar podium with a minimalist background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0bInIr4YzEglDGrY_5jcbNRl5IdUy_V5ZnfqIaJCmGPWrVGyN2GJmbO2-gzbhh_ZWaP2T-OpgKiFrjXUsxbjlk33zQE08vbVGAkAxCVDxInB2B_Z4Td2sjBGyyuFQlo39nHqxjVgUiwczVGUPYcvhRZpE9UL1aD1_vzGIvnXYg1mj4rwttjhrsIdoZYN8tUVoz_IPNgzG7Sd392Fs35dIbCdqPrNF5RhlL2Z9-xljnlko4Du0LWLTZ_SAf8rTd_431UvknERPtQ"/>
+</div>
+</div>
+<div class="order-1 lg:order-2">
+<h3 class="font-headline text-primary text-sm font-black uppercase tracking-[0.3em] mb-4">Our Mission</h3>
+<h2 class="font-headline text-5xl font-extrabold text-on-surface mb-8 leading-tight">
+                            Building the Elite Pipeline <br/>
+                            to Corporate Excellence.
+                        </h2>
+<p class="text-on-surface-variant text-xl leading-relaxed mb-8">
+                            At the UMD Sales Club, we believe that sales is the backbone of the global economy. We provide our members with the high-velocity training, networking ecosystems, and competitive exposure needed to excel in the boardroom and beyond.
+                        </p>
+<ul class="space-y-6">
+<li class="flex items-start gap-4">
+<div class="bg-primary-container/10 p-2 rounded-lg">
+<span class="material-symbols-outlined text-primary">verified</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface">Industry-Standard Coaching</h4>
+<p class="text-on-surface-variant">Train with real-world scenarios designed by Fortune 500 partners.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<div class="bg-primary-container/10 p-2 rounded-lg">
+<span class="material-symbols-outlined text-primary">diversity_3</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface">Alumni Network</h4>
+<p class="text-on-surface-variant">Instant access to over 500 graduates in high-performing roles.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Section (Signature Component: Perspective Stat) -->
+<section class="py-24 bg-primary relative overflow-hidden">
+<div class="absolute inset-0 noise-texture opacity-5"></div>
+<div class="max-w-screen-2xl mx-auto px-8 relative z-10">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
+<div class="flex flex-col items-center">
+<span class="font-headline text-6xl lg:text-8xl font-black text-secondary-container leading-none">95%</span>
+<span class="font-headline text-sm font-bold text-white uppercase tracking-widest mt-4">Job Placement</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="font-headline text-6xl lg:text-8xl font-black text-secondary-container leading-none">20+</span>
+<span class="font-headline text-sm font-bold text-white uppercase tracking-widest mt-4">Corp Partners</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="font-headline text-6xl lg:text-8xl font-black text-secondary-container leading-none">15</span>
+<span class="font-headline text-sm font-bold text-white uppercase tracking-widest mt-4">Case Comps</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="font-headline text-6xl lg:text-8xl font-black text-secondary-container leading-none">$10k</span>
+<span class="font-headline text-sm font-bold text-white uppercase tracking-widest mt-4">Scholarships</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Weekly Activities (Bento Grid Style) -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="flex justify-between items-end mb-16">
+<div>
+<h2 class="font-headline text-5xl font-black text-on-surface">Club Operations</h2>
+<p class="text-on-surface-variant text-lg mt-2">Join us for our weekly high-intensity sessions.</p>
+</div>
+<a class="hidden md:flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all" href="https://duluthumn.campusgroups.com/sales/calendar">
+                        Full Calendar <span class="material-symbols-outlined">calendar_today</span>
+</a>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 h-auto lg:h-[600px]">
+<!-- Main Calendar Widget -->
+<div class="lg:col-span-2 bg-white rounded-xl shadow-sm overflow-hidden flex flex-col border border-outline-variant/10">
+<div class="p-6 border-b border-surface-container-high bg-surface flex justify-between items-center">
+<span class="font-headline font-black text-on-surface uppercase tracking-widest text-sm">Weekly Activity Tracker</span>
+<div class="flex gap-2">
+<span class="w-3 h-3 rounded-full bg-red-400"></span>
+<span class="w-3 h-3 rounded-full bg-yellow-400"></span>
+<span class="w-3 h-3 rounded-full bg-green-400"></span>
+</div>
+</div>
+<div class="flex-grow bg-slate-50 p-4 flex items-center justify-center relative overflow-hidden">
+<!-- Simulated Google Calendar Widget Appearance -->
+<div class="w-full h-full bg-white rounded shadow-inner p-8 flex flex-col gap-6">
+<div class="flex items-center justify-between">
+<h3 class="text-xl font-bold">September 2024</h3>
+<div class="flex gap-4">
+<span class="material-symbols-outlined cursor-pointer">chevron_left</span>
+<span class="material-symbols-outlined cursor-pointer">chevron_right</span>
+</div>
+</div>
+<div class="grid grid-cols-7 gap-2 text-center text-xs font-bold text-on-surface-variant uppercase mb-4">
+<span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span>
+</div>
+<div class="grid grid-cols-7 gap-2 flex-grow">
+<!-- Simplified Calendar Representation -->
+<div class="aspect-square bg-surface border border-outline-variant/10 rounded-sm p-2 flex flex-col items-end opacity-40">26</div>
+<div class="aspect-square bg-surface border border-outline-variant/10 rounded-sm p-2 flex flex-col items-end opacity-40">27</div>
+<div class="aspect-square bg-surface border border-outline-variant/10 rounded-sm p-2 flex flex-col items-end">1</div>
+<div class="aspect-square bg-surface border border-outline-variant/10 rounded-sm p-2 flex flex-col items-end relative overflow-hidden">
+                                        2
+                                        <div class="absolute bottom-1 left-1 right-1 bg-primary text-[8px] text-white p-1 rounded-sm truncate">Weekly Meeting</div>
+</div>
+<div class="aspect-square bg-surface border border-outline-variant/10 rounded-sm p-2 flex flex-col items-end">3</div>
+<div class="aspect-square bg-surface border border-outline-variant/10 rounded-sm p-2 flex flex-col items-end">4</div>
+<div class="aspect-square bg-surface border border-outline-variant/10 rounded-sm p-2 flex flex-col items-end">5</div>
+<div class="aspect-square bg-surface border border-outline-variant/10 rounded-sm p-2 flex flex-col items-end">6</div>
+<div class="aspect-square bg-surface border border-outline-variant/10 rounded-sm p-2 flex flex-col items-end">7</div>
+<div class="aspect-square bg-surface border border-outline-variant/10 rounded-sm p-2 flex flex-col items-end">8</div>
+<div class="aspect-square bg-primary-container/10 border-2 border-primary-container rounded-sm p-2 flex flex-col items-end relative overflow-hidden">
+                                        9
+                                        <div class="absolute bottom-1 left-1 right-1 bg-secondary-container text-on-secondary-container text-[8px] font-bold p-1 rounded-sm truncate">Workshop: Objection Handling</div>
+</div>
+<div class="aspect-square bg-surface border border-outline-variant/10 rounded-sm p-2 flex flex-col items-end">10</div>
+<div class="aspect-square bg-surface border border-outline-variant/10 rounded-sm p-2 flex flex-col items-end">11</div>
+<div class="aspect-square bg-surface border border-outline-variant/10 rounded-sm p-2 flex flex-col items-end">12</div>
+</div>
+</div>
+<div class="absolute inset-0 bg-white/10 backdrop-blur-[1px] pointer-events-none"></div>
+</div>
+</div>
+<!-- Sidebar Info -->
+<div class="flex flex-col gap-8">
+<div class="bg-primary p-8 rounded-xl flex-grow flex flex-col justify-end text-white relative overflow-hidden">
+<div class="absolute top-0 right-0 p-8 opacity-10">
+<span class="material-symbols-outlined text-9xl">campaign</span>
+</div>
+<h4 class="font-headline text-2xl font-black mb-2">Next Session</h4>
+<p class="text-surface-variant mb-6 uppercase tracking-widest text-xs font-bold">Monday, Sept 9th @ 6:00 PM</p>
+<p class="text-on-primary-container font-medium mb-6">LSBE Room 235 - Cold Calling Workshop with Enterprise Rent-A-Car.</p>
+<a class="text-secondary-container font-bold flex items-center gap-2 hover:gap-4 transition-all" href="#">
+                                RSVP on CampusGroups <span class="material-symbols-outlined">open_in_new</span>
+</a>
+</div>
+<div class="bg-secondary-container p-8 rounded-xl flex flex-col justify-between text-on-secondary-container">
+<h4 class="font-headline text-xl font-black leading-tight">Sync your calendar for live updates.</h4>
+<button class="mt-4 bg-on-secondary-container text-white px-6 py-3 rounded-md font-bold text-sm">Add to Google Calendar</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bulldog-Connect Call to Action (Atmospheric Wash) -->
+<section class="py-32 bg-primary relative overflow-hidden">
+<div class="absolute inset-0 noise-texture opacity-10"></div>
+<div class="max-w-4xl mx-auto px-8 text-center relative z-10">
+<span class="material-symbols-outlined text-secondary-container text-6xl mb-8">groups</span>
+<h2 class="font-headline text-5xl md:text-6xl font-black text-white mb-8 tracking-tighter">
+                    Stay Connected via <br/>Bulldog-Connect
+                </h2>
+<p class="text-surface-variant text-xl leading-relaxed mb-12">
+                    Official club communications, membership tracking, and exclusive internship postings are managed through Duluth's premier student hub.
+                </p>
+<div class="flex flex-col sm:flex-row justify-center gap-6">
+<a class="bg-white text-primary px-12 py-5 rounded-md font-black text-lg hover:bg-secondary-container hover:text-on-secondary-container transition-all shadow-2xl" href="https://duluthumn.campusgroups.com/sales/home/">
+                        Log in to Bulldog-Connect
+                    </a>
+<a class="border border-white/20 text-white px-12 py-5 rounded-md font-bold text-lg hover:bg-white/10 transition-all" href="mailto:sales@d.umn.edu">
+                        Contact Executive Board
+                    </a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-100 dark:bg-slate-900 w-full py-12 px-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-screen-2xl mx-auto items-start">
+<div>
+<div class="text-lg font-bold text-[#7A0019] font-headline uppercase tracking-tighter mb-4">UMD Sales Club</div>
+<p class="font-['Inter'] text-sm leading-relaxed text-slate-500 max-w-xs">
+                    Developing professional sales leaders through education, competition, and networking at the University of Minnesota Duluth.
+                </p>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="flex flex-col gap-3">
+<span class="text-xs font-black uppercase tracking-widest text-[#7A0019]">Quick Links</span>
+<a class="text-slate-500 font-['Inter'] text-sm hover:underline decoration-2 underline-offset-4" href="#">Events</a>
+<a class="text-slate-500 font-['Inter'] text-sm hover:underline decoration-2 underline-offset-4" href="#">Competitions</a>
+<a class="text-slate-500 font-['Inter'] text-sm hover:underline decoration-2 underline-offset-4" href="#">Our Partners</a>
+</div>
+<div class="flex flex-col gap-3">
+<span class="text-xs font-black uppercase tracking-widest text-[#7A0019]">Legal</span>
+<a class="text-slate-500 font-['Inter'] text-sm hover:underline decoration-2 underline-offset-4" href="#">Privacy Policy</a>
+<a class="text-slate-500 font-['Inter'] text-sm hover:underline decoration-2 underline-offset-4" href="#">Terms of Service</a>
+</div>
+</div>
+<div class="flex flex-col md:items-end">
+<span class="text-xs font-black uppercase tracking-widest text-[#7A0019] mb-4">Contact Us</span>
+<p class="font-['Inter'] text-sm leading-relaxed text-slate-500 mb-2">Labovitz School of Business and Economics</p>
+<p class="font-['Inter'] text-sm leading-relaxed text-slate-500">1318 Kirby Drive, Duluth, MN 55812</p>
+<div class="mt-6 flex gap-4">
+<a class="text-[#7A0019] opacity-80 hover:opacity-100 transition-opacity" href="#">
+<span class="material-symbols-outlined">social_leaderboard</span>
+</a>
+<a class="text-[#7A0019] opacity-80 hover:opacity-100 transition-opacity" href="#">
+<span class="material-symbols-outlined">link</span>
+</a>
+</div>
+</div>
+</div>
+<div class="max-w-screen-2xl mx-auto border-t border-slate-200 dark:border-slate-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+<span class="font-['Inter'] text-sm text-slate-500">© 2024 UMD Sales Club. All rights reserved.</span>
+<span class="font-['Inter'] text-xs text-slate-400">Institutional Excellence. Professional Performance.</span>
+</div>
+</footer>
+</body></html>
